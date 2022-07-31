@@ -23,11 +23,9 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/xsbull/utils/async"
 	"github.com/xsbull/utils/fileinfo"
 	logapi "github.com/xsbull/utils/logapi"
 	utilpath "github.com/xsbull/utils/path"
-	"github.com/xsbull/utils/wait"
 )
 
 //Logger implement
@@ -41,8 +39,6 @@ type Logger struct {
 	MaxFileSize        float64
 	outputType         logapi.LoggerOutputType
 	initOutputTypeOnce sync.Once
-
-	runner *async.Runner
 }
 
 const (
@@ -65,9 +61,6 @@ func NewLogger(callerDep int) logapi.Interface {
 		rawLoggerHandler: logrusLogger,
 	}
 
-	runFuncs := []func(stop chan struct{}){l.RunRecordLogRotate}
-	l.runner = async.NewRunner(runFuncs...)
-
 	return l
 }
 
@@ -87,20 +80,6 @@ func (l *Logger) initLogrus() error {
 		return fmt.Errorf("Failed to log to file, using default stderr")
 	}
 	return nil
-}
-
-// RunRecordLogRotate run record log rotate
-func (l *Logger) RunRecordLogRotate(ch chan struct{}) {
-	wait.Until(func() {
-		if l.outputType == logapi.LoggerOutputTypeFile {
-			file, err := os.OpenFile(fmt.Sprintf("%slog.%s", l.LocalFile, time.Now().Format("2006010215")), os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
-			if err == nil {
-				l.rawLoggerHandler.Out = file
-			}
-			l.logRotate(l.LocalFile)
-		}
-
-	}, time.Duration(l.RotateInterval)*time.Hour, ch)
 }
 
 // recordLogRotate
@@ -317,7 +296,7 @@ func (l *Logger) SetLoggerOutputType(outputType logapi.LoggerOutputType) {
 				fmt.Errorf("SetLoggerOutputType initLogrus err:%v", err)
 				return
 			}
-			l.runner.Start()
+			// l.runner.Start()
 		})
 	}
 }

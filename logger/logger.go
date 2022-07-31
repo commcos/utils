@@ -11,6 +11,8 @@ See docs/ for more information about the  project.
 package logger
 
 import (
+	"fmt"
+
 	logapi "github.com/xsbull/utils/logapi"
 	loggerconfig "github.com/xsbull/utils/logapi/loggerbackend"
 	loggerfactory "github.com/xsbull/utils/logapi/loggerbackend/factory"
@@ -33,6 +35,7 @@ func (lt *loggerImpl) initBackend() {
 var defaultLoggerHandler loggerImpl
 
 func init() {
+	fmt.Println("init")
 	defaultLoggerHandler.initBackend()
 }
 
