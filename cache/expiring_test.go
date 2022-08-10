@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/uuid"
+	"github.com/xsbull/utils/uuid"
 
 	utilclock "github.com/xsbull/utils/clock"
 )

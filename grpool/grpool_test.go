@@ -232,7 +232,11 @@ func TestCustomWorker(t *testing.T) {
 		}
 	})
 
-	worker1, ok := pool.workers[0].worker.(*mockWorker)
+	var worker1 *mockWorker
+	var ok bool
+	for _, v := range pool.workers {
+		worker1, ok = v.worker.(*mockWorker)
+	}
 	if !ok {
 		t.Fatal("Wrong type of worker in pool")
 	}

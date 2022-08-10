@@ -16,7 +16,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/uuid"
+	"github.com/xsbull/utils/uuid"
 )
 
 //------------------------------------------------------------------------------

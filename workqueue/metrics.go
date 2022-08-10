@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/clock"
+	"github.com/xsbull/utils/clock"
 )
 
 // This file provides abstractions for setting the provider (e.g., prometheus)

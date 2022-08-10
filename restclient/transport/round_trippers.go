@@ -25,7 +25,7 @@ import (
 	"github.com/xsbull/utils/logger"
 	"golang.org/x/oauth2"
 
-	utilnet "k8s.io/apimachinery/pkg/util/net"
+	utilnet "github.com/xsbull/utils/net"
 )
 
 // HTTPWrappersForConfig wraps a round tripper with any relevant layered

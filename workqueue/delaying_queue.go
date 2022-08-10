@@ -20,8 +20,8 @@ import (
 	"container/heap"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/clock"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
+	"github.com/xsbull/utils/clock"
+	utilruntime "github.com/xsbull/utils/runtime"
 )
 
 // DelayingInterface is an Interface that can Add an item at a later time. This makes it easier to

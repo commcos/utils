@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/clock"
-	"k8s.io/apimachinery/pkg/util/wait"
+	"github.com/xsbull/utils/clock"
+	"github.com/xsbull/utils/wait"
 )
 
 func TestSimpleQueue(t *testing.T) {

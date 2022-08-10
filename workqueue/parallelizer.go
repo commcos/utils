@@ -20,7 +20,7 @@ import (
 	"context"
 	"sync"
 
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
+	utilruntime "github.com/xsbull/utils/runtime"
 )
 
 type DoWorkPieceFunc func(piece int)

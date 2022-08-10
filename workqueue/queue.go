@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/clock"
+	"github.com/xsbull/utils/clock"
 )
 
 type Interface interface {

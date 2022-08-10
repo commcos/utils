@@ -21,9 +21,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"k8s.io/apimachinery/pkg/util/httpstream"
-	"k8s.io/apimachinery/pkg/util/httpstream/spdy"
-	restclient "k8s.io/client-go/rest"
+	"github.com/xsbull/utils/httpstream"
+	"github.com/xsbull/utils/httpstream/spdy"
+	restclient "github.com/xsbull/utils/restclient"
 )
 
 // Upgrader validates a response from the server after a SPDY upgrade.
@@ -38,7 +38,7 @@ func RoundTripperFor(config *restclient.Config) (http.RoundTripper, Upgrader, er
 	if err != nil {
 		return nil, nil, err
 	}
-	upgradeRoundTripper := spdy.NewRoundTripper(tlsConfig, true, false)
+	upgradeRoundTripper := spdy.NewRoundTripper(tlsConfig)
 	wrapper, err := restclient.HTTPWrappersForConfig(config, upgradeRoundTripper)
 	if err != nil {
 		return nil, nil, err

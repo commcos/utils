@@ -25,7 +25,7 @@ func TestWithParser(t *testing.T) {
 func TestWithVerboseLogger(t *testing.T) {
 	var buf syncWriter
 	var logger = log.New(&buf, "", log.LstdFlags)
-	c := New(WithLogger(VerbosePrintfLogger(logger)))
+	c := New(WithCustomLogger(VerbosePrintfLogger(logger)))
 	if c.logger.(printfLogger).logger != logger {
 		t.Error("expected provided logger")
 	}

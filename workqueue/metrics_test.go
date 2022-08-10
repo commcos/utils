@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/clock"
+	"github.com/xsbull/utils/clock"
 )
 
 type testMetrics struct {
