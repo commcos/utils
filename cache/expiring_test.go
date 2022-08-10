@@ -222,7 +222,7 @@ func benchmarkExpiringCacheContention(b *testing.B, prob float64) {
 
 	keys := []string{}
 	for i := 0; i < numKeys; i++ {
-		key := uuid.New().String()
+		key := uuid.NewUUID().String()
 		keys = append(keys, key)
 	}
 
@@ -256,7 +256,7 @@ func TestStressExpiringCache(t *testing.T) {
 
 	keys := []string{}
 	for i := 0; i < numKeys; i++ {
-		key := uuid.New().String()
+		key := uuid.NewUUID().String()
 		keys = append(keys, key)
 	}
 
