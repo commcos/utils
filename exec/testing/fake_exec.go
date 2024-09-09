@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/xsbull/utils/exec"
+	"github.com/commcos/utils/exec"
 )
 
 // FakeExec is a simple scripted Interface type.

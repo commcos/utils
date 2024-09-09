@@ -19,7 +19,7 @@ package testingexec
 import (
 	"testing"
 
-	"github.com/xsbull/utils/exec"
+	"github.com/commcos/utils/exec"
 )
 
 // Test that command order is enforced

@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xsbull/utils/restclient/clock"
+	"github.com/commcos/utils/restclient/clock"
 )
 
 type backoffEntry struct {

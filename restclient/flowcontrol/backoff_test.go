@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xsbull/utils/restclient/clock"
+	"github.com/commcos/utils/restclient/clock"
 )
 
 func TestSlowBackoff(t *testing.T) {

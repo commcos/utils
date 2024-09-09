@@ -24,7 +24,7 @@ import (
 	"regexp"
 	"strings"
 
-	utilexec "github.com/xsbull/utils/exec"
+	utilexec "github.com/commcos/utils/exec"
 )
 
 const (

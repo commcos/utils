@@ -22,10 +22,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 	"golang.org/x/oauth2"
 
-	utilnet "github.com/xsbull/utils/net"
+	utilnet "github.com/commcos/utils/net"
 )
 
 // HTTPWrappersForConfig wraps a round tripper with any relevant layered

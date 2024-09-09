@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/commcos/utils/httpstream"
 	"github.com/moby/spdystream"
-	"github.com/xsbull/utils/httpstream"
 )
 
 func runProxy(t *testing.T, backendUrl string, proxyUrl chan<- string, proxyDone chan<- struct{}, errCh chan<- error) {

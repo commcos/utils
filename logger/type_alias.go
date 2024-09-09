@@ -1,7 +1,7 @@
 package logger
 
 import (
-	logapi "github.com/xsbull/utils/logapi"
+	logapi "github.com/commcos/utils/logapi"
 )
 
 type LoggerOutputFileConf = logapi.LoggerOutputFileConf
@@ -13,10 +13,10 @@ const (
 	LoggerOutputTypeFile   = logapi.LoggerOutputTypeFile
 )
 
-//Fields log fields
+// Fields log fields
 type Fields = logapi.Fields
 
-//Level logger level
+// Level logger level
 type Level = logapi.Level
 
 const (

@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/xsbull/utils/exec"
+	"github.com/commcos/utils/exec"
 )
 
 func ExampleNew() {

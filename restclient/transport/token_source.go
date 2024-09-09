@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 	"golang.org/x/oauth2"
 )
 

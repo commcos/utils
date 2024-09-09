@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	utilclock "github.com/xsbull/utils/clock"
+	utilclock "github.com/commcos/utils/clock"
 )
 
 // NewExpiring returns an initialized expiring cache.

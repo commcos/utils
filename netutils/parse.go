@@ -17,7 +17,7 @@ limitations under the License.
 package net
 
 import (
-	forkednet "github.com/xsbull/utils/internal/third_party/forked/golang/net"
+	forkednet "github.com/commcos/utils/internal/third_party/forked/golang/net"
 )
 
 // ParseIPSloppy is identical to Go's standard net.ParseIP, except that it allows

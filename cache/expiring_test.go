@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xsbull/utils/uuid"
+	"github.com/commcos/utils/uuid"
 
-	utilclock "github.com/xsbull/utils/clock"
+	utilclock "github.com/commcos/utils/clock"
 )
 
 func TestExpiringCache(t *testing.T) {

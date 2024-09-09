@@ -11,8 +11,8 @@ See docs/ for more information about the  project.
 package factory
 
 import (
-	"github.com/xsbull/utils/logapi"
-	loggerconf "github.com/xsbull/utils/logapi/loggerbackend"
+	"github.com/commcos/utils/logapi"
+	loggerconf "github.com/commcos/utils/logapi/loggerbackend"
 )
 
 func CreateLogHandle(conf *loggerconf.Config) logapi.Interface {

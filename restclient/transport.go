@@ -14,7 +14,7 @@ import (
 	"crypto/tls"
 	"net/http"
 
-	"github.com/xsbull/utils/restclient/transport"
+	"github.com/commcos/utils/restclient/transport"
 )
 
 // TLSConfigFor returns a tls.Config that will provide the transport level security defined

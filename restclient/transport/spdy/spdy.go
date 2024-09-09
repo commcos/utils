@@ -21,9 +21,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/xsbull/utils/httpstream"
-	"github.com/xsbull/utils/httpstream/spdy"
-	restclient "github.com/xsbull/utils/restclient"
+	"github.com/commcos/utils/httpstream"
+	"github.com/commcos/utils/httpstream/spdy"
+	restclient "github.com/commcos/utils/restclient"
 )
 
 // Upgrader validates a response from the server after a SPDY upgrade.

@@ -1,7 +1,7 @@
 package runtime
 
 import (
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 )
 
 // RecoveryFunction panic recovery

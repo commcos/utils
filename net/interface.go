@@ -26,9 +26,9 @@ import (
 
 	"strings"
 
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 
-	netutils "github.com/xsbull/utils/netutils"
+	netutils "github.com/commcos/utils/netutils"
 )
 
 type AddressFamily uint

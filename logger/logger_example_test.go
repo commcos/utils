@@ -11,7 +11,7 @@ See docs/ for more information about the  project.
 package logger_test
 
 import (
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 )
 
 func ExampleLog() {

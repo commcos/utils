@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 )
 
 // DefaultLogger is used by Cron if none is specified.

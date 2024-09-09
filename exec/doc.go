@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package exec provides an injectable interface and implementations for running commands.
-package exec // import "github.com/xsbull/utils/exec"
+package exec // import "github.com/commcos/utils/exec"

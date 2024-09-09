@@ -11,9 +11,9 @@ See docs/ for more information about the  project.
 package factory
 
 import (
-	"github.com/xsbull/utils/logapi"
-	loggerconf "github.com/xsbull/utils/logapi/loggerbackend"
-	backendlogrus "github.com/xsbull/utils/logapi/logrus"
+	"github.com/commcos/utils/logapi"
+	loggerconf "github.com/commcos/utils/logapi/loggerbackend"
+	backendlogrus "github.com/commcos/utils/logapi/logrus"
 )
 
 func newLogrusbackend(conf *loggerconf.Config) logapi.Interface {

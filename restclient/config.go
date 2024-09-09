@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xsbull/utils/restclient/flowcontrol"
-	"github.com/xsbull/utils/restclient/transport"
+	"github.com/commcos/utils/restclient/flowcontrol"
+	"github.com/commcos/utils/restclient/transport"
 )
 
 const (
@@ -29,7 +29,7 @@ const (
 	DefaultBurst int     = 10
 )
 
-//ContentConfig content configu eg. application/json
+// ContentConfig content configu eg. application/json
 type ContentConfig struct {
 	// AcceptContentTypes specifies the types the client will accept and is optional.
 	// If not set, ContentType will be used to define the Accept header
@@ -330,7 +330,7 @@ func dataFromSliceOrFile(data []byte, file string) ([]byte, error) {
 	return nil, nil
 }
 
-//AddUserAgent add user agent
+// AddUserAgent add user agent
 func AddUserAgent(config *Config, userAgent string) *Config {
 	fullUserAgent := userAgent
 	config.UserAgent = fullUserAgent

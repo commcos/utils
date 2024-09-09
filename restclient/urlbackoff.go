@@ -14,10 +14,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/xsbull/utils/restclient/flowcontrol"
-	"github.com/xsbull/utils/restclient/sets"
+	"github.com/commcos/utils/restclient/flowcontrol"
+	"github.com/commcos/utils/restclient/sets"
 
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 )
 
 // Set of resp. Codes that we backoff for.

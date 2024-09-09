@@ -22,13 +22,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/commcos/utils/fileinfo"
+	logapi "github.com/commcos/utils/logapi"
+	utilpath "github.com/commcos/utils/path"
 	"github.com/sirupsen/logrus"
-	"github.com/xsbull/utils/fileinfo"
-	logapi "github.com/xsbull/utils/logapi"
-	utilpath "github.com/xsbull/utils/path"
 )
 
-//Logger implement
+// Logger implement
 type Logger struct {
 	logrus.Ext1FieldLogger
 	callerDep        int
@@ -146,7 +146,7 @@ func (l Logger) caller() (string, string, int, string) {
 	return "caller", "logger", 0, ""
 }
 
-//Log wrap level and field
+// Log wrap level and field
 func (l Logger) Logf(level logapi.Level, format string, args ...interface{}) {
 
 	var entry *logrus.Entry
@@ -174,7 +174,7 @@ func (l Logger) Logf(level logapi.Level, format string, args ...interface{}) {
 	}
 }
 
-//LogF wrap level and field
+// LogF wrap level and field
 func (l Logger) LogFf(level logapi.Level, fields logapi.Fields, format string, args ...interface{}) {
 
 	logrusFields := logrus.Fields(fields)
@@ -205,7 +205,7 @@ func (l Logger) LogFf(level logapi.Level, fields logapi.Fields, format string, a
 
 }
 
-//LogF wrap level and field
+// LogF wrap level and field
 func (l Logger) Log(level logapi.Level, args ...interface{}) {
 
 	_, _, _, callerStr := l.caller()

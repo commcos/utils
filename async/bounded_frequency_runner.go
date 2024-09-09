@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xsbull/utils/flowcontrol"
+	"github.com/commcos/utils/flowcontrol"
 )
 
 // BoundedFrequencyRunner manages runs of a user-provided function.

@@ -16,7 +16,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/xsbull/utils/uuid"
+	"github.com/commcos/utils/uuid"
 )
 
 //------------------------------------------------------------------------------

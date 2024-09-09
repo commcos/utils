@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	netutils "github.com/xsbull/utils/netutils"
+	netutils "github.com/commcos/utils/netutils"
 )
 
 const gatewayfirst = `Iface	Destination	Gateway 	Flags	RefCnt	Use	Metric	Mask		MTU	Window	IRTT                                                       

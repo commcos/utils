@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xsbull/utils/clock"
+	"github.com/commcos/utils/clock"
 )
 
 // This file provides abstractions for setting the provider (e.g., prometheus)

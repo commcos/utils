@@ -13,8 +13,8 @@ package eventbus
 import (
 	"time"
 
-	"github.com/xsbull/utils/grpool"
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/grpool"
+	"github.com/commcos/utils/logger"
 )
 
 var (

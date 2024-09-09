@@ -20,8 +20,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xsbull/utils/clock"
-	"github.com/xsbull/utils/integer"
+	"github.com/commcos/utils/clock"
+	"github.com/commcos/utils/integer"
 )
 
 type backoffEntry struct {

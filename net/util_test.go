@@ -23,7 +23,7 @@ import (
 	"syscall"
 	"testing"
 
-	netutils "github.com/xsbull/utils/netutils"
+	netutils "github.com/commcos/utils/netutils"
 )
 
 func getIPNet(cidr string) *net.IPNet {

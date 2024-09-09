@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xsbull/utils/clock"
-	"github.com/xsbull/utils/wait"
+	"github.com/commcos/utils/clock"
+	"github.com/commcos/utils/wait"
 )
 
 func TestSimpleQueue(t *testing.T) {

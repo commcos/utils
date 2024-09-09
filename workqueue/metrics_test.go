@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xsbull/utils/clock"
+	"github.com/commcos/utils/clock"
 )
 
 type testMetrics struct {

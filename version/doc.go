@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package version provides utilities for version number comparisons
-package version // import "github.com/xsbull/utils/version"
+package version // import "github.com/commcos/utils/version"

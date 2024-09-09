@@ -10,7 +10,7 @@ See docs/ for more information about the  project.
 
 package cache
 
-import utilclock "github.com/xsbull/utils/clock"
+import utilclock "github.com/commcos/utils/clock"
 
 type DeleteHook func(key interface{}, value interface{})
 

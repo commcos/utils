@@ -31,9 +31,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xsbull/utils/httpstream"
-	utilnet "github.com/xsbull/utils/net"
-	"github.com/xsbull/utils/third_party/forked/golang/netutil"
+	"github.com/commcos/utils/httpstream"
+	utilnet "github.com/commcos/utils/net"
+	"github.com/commcos/utils/third_party/forked/golang/netutil"
 	"golang.org/x/net/proxy"
 )
 
@@ -117,7 +117,7 @@ func (s *SpdyRoundTripper) TLSClientConfig() *tls.Config {
 	return s.tlsConfig
 }
 
-// Dial implements github.com/xsbull/utils/net.Dialer.
+// Dial implements github.com/commcos/utils/net.Dialer.
 func (s *SpdyRoundTripper) Dial(req *http.Request) (net.Conn, error) {
 	conn, err := s.dial(req)
 	if err != nil {

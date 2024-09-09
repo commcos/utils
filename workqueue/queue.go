@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xsbull/utils/clock"
+	"github.com/commcos/utils/clock"
 )
 
 type Interface interface {

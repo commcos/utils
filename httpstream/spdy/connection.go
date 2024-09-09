@@ -22,9 +22,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/commcos/utils/httpstream"
+	"github.com/commcos/utils/logger"
 	"github.com/moby/spdystream"
-	"github.com/xsbull/utils/httpstream"
-	"github.com/xsbull/utils/logger"
 )
 
 // connection maintains state about a spdystream.Connection and its associated

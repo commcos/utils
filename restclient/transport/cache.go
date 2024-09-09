@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	utilnet "github.com/xsbull/utils/net"
+	utilnet "github.com/commcos/utils/net"
 )
 
 // TlsTransportCache caches TLS http.RoundTrippers different configurations. The

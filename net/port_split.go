@@ -19,7 +19,7 @@ package net
 import (
 	"strings"
 
-	"github.com/xsbull/utils/sets"
+	"github.com/commcos/utils/sets"
 )
 
 var validSchemes = sets.NewString("http", "https", "")

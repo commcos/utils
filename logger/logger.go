@@ -13,9 +13,9 @@ package logger
 import (
 	"fmt"
 
-	logapi "github.com/xsbull/utils/logapi"
-	loggerconfig "github.com/xsbull/utils/logapi/loggerbackend"
-	loggerfactory "github.com/xsbull/utils/logapi/loggerbackend/factory"
+	logapi "github.com/commcos/utils/logapi"
+	loggerconfig "github.com/commcos/utils/logapi/loggerbackend"
+	loggerfactory "github.com/commcos/utils/logapi/loggerbackend/factory"
 )
 
 type loggerImpl struct {
@@ -43,7 +43,7 @@ func LogLevel() Level {
 	return defaultLoggerHandler.level
 }
 
-//InitLogger init logger
+// InitLogger init logger
 func SetLogLevel(level Level) {
 
 	defaultLoggerHandler.level = level
@@ -51,12 +51,12 @@ func SetLogLevel(level Level) {
 	defaultLoggerHandler.SetLevel(level)
 }
 
-//Log wrap level and field
+// Log wrap level and field
 func Log(level Level, args ...interface{}) {
 	defaultLoggerHandler.Log(level, args...)
 }
 
-//LogF wrap level and field
+// LogF wrap level and field
 func Logf(level Level, template string, args ...interface{}) {
 
 	defaultLoggerHandler.Logf(level, template, args...)

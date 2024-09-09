@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xsbull/utils/workqueue"
+	"github.com/commcos/utils/workqueue"
 )
 
 func TestBasic(t *testing.T) {

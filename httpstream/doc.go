@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package httpstream adds multiplexed streaming support to HTTP requests and
 // responses via connection upgrades.
-package httpstream // import "github.com/xsbull/utils/httpstream"
+package httpstream // import "github.com/commcos/utils/httpstream"

@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xsbull/utils/clock"
-	"github.com/xsbull/utils/runtime"
+	"github.com/commcos/utils/clock"
+	"github.com/commcos/utils/runtime"
 )
 
 func TestUntil(t *testing.T) {

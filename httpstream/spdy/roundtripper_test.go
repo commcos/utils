@@ -34,7 +34,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/xsbull/utils/httpstream"
+	"github.com/commcos/utils/httpstream"
 )
 
 type serverHandlerConfig struct {

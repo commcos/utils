@@ -36,10 +36,10 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/xsbull/utils/logger"
+	"github.com/commcos/utils/logger"
 	"golang.org/x/net/http2"
 
-	netutils "github.com/xsbull/utils/netutils"
+	netutils "github.com/commcos/utils/netutils"
 )
 
 // JoinPreservingTrailingSlash does a path.Join of the specified elements,

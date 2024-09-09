@@ -20,8 +20,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/xsbull/utils/exec"
-	fakeexec "github.com/xsbull/utils/exec/testing"
+	"github.com/commcos/utils/exec"
+	fakeexec "github.com/commcos/utils/exec/testing"
 )
 
 func TestEnsureChain(t *testing.T) {

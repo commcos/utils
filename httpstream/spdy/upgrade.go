@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/xsbull/utils/httpstream"
-	"github.com/xsbull/utils/runtime"
+	"github.com/commcos/utils/httpstream"
+	"github.com/commcos/utils/runtime"
 )
 
 const HeaderSpdy31 = "SPDY/3.1"

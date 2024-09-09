@@ -20,8 +20,8 @@ import (
 	"container/heap"
 	"time"
 
-	"github.com/xsbull/utils/clock"
-	utilruntime "github.com/xsbull/utils/runtime"
+	"github.com/commcos/utils/clock"
+	utilruntime "github.com/commcos/utils/runtime"
 )
 
 // DelayingInterface is an Interface that can Add an item at a later time. This makes it easier to

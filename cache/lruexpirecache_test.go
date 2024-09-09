@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/commcos/utils/clock"
 	"github.com/google/go-cmp/cmp"
-	"github.com/xsbull/utils/clock"
 )
 
 func expectEntry(t *testing.T, c *LRUExpireCache, key interface{}, value interface{}) {

@@ -1,8 +1,8 @@
 package flag
 
 import (
+	"github.com/commcos/utils/logger"
 	"github.com/spf13/pflag"
-	"github.com/xsbull/utils/logger"
 )
 
 // PrintFlags logs the flags in the flagset

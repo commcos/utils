@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/xsbull/utils/exec"
+	"github.com/commcos/utils/exec"
 )
 
 func ExampleNew_stderrPipe() {
