@@ -1,4 +1,4 @@
-module github.com/xsbull/utils
+module github.com/commcos/utils
 
 go 1.18
 
